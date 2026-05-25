@@ -1,0 +1,316 @@
+/**
+ * FileUpload Styles
+ *
+ * Custom styles for the FileUpload component
+ * Overrides PrimeReact FileUpload default styles
+ */
+
+/* Container */
+.file-upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.file-upload-container.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Label */
+.file-upload-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-black);
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+}
+
+.required-indicator {
+    color: var(--color-danger-500);
+    margin-left: 0.25rem;
+    font-weight: 600;
+}
+
+/* Custom File Upload */
+.custom-file-upload {
+    width: 100%;
+}
+
+/* Override PrimeReact FileUpload Styles */
+.custom-prime-upload {
+    width: 100%;
+    border: 1px solid var(--color-gray-600);
+    border-radius: 8px;
+}
+
+.custom-prime-upload .p-fileupload {
+    border: none;
+    background: transparent;
+    padding: 0;
+    position: relative;
+}
+
+.custom-prime-upload .p-fileupload-buttonbar {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.custom-prime-upload .p-fileupload-content {
+    background: var(--color-text-white);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.custom-prime-upload.upload-error .p-fileupload-content {
+    border-color: var(--color-danger-500);
+}
+
+.custom-prime-upload.upload-error .p-fileupload-content:hover {
+    border-color: var(--color-danger-500);
+}
+
+/* Hide default buttons */
+.custom-prime-upload .p-button {
+    display: none;
+}
+
+/* Upload Header - Matches Figma Design Exactly */
+.upload-header-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 7.5rem;
+    width: 100%;
+    padding: 8px;
+    background-color: var(--color-text-white);
+    border-radius: 0.5rem 0.5rem 0 0;
+    border-bottom: 1px solid var(--color-gray-300);
+}
+
+.upload-header-body {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Upload Header Buttons Container */
+.upload-header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Circular Plus Button */
+.upload-plus-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--color-brand-500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+    padding: 0;
+    background: white;
+}
+
+.upload-plus-button:hover:not(:disabled) {
+    background: #f3e5f5;
+}
+
+.upload-plus-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Circular Remove Button */
+.upload-remove-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #dc2626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+    padding: 0;
+    background: white;
+}
+
+.upload-remove-button:hover:not(:disabled) {
+    background: #fee2e2;
+}
+
+.upload-remove-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* File Size Text */
+.upload-file-size {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-text-black);
+}
+
+/* Progress Bar */
+.upload-progress-bar {
+    /* flex: 1; */
+    width: 150px;
+    height: 10px;
+    background-color: var(--color-gray-600);
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.upload-progress-bar .p-progressbar-value {
+    background-color: var(--color-brand-500);
+}
+
+.upload-progress-fill {
+    height: 100%;
+    background-color: var(--color-gray-400);
+    border-radius: 9999px;
+    transition: width 0.3s ease;
+}
+
+/* Empty Template - Center Area */
+.custom-upload-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    flex: 1;
+    padding: 3rem 2rem;
+}
+
+.upload-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-gray-200);
+    border-radius: 50%;
+}
+
+.upload-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.upload-text {
+    margin: 0;
+}
+
+/* File Item Styles (when file is uploaded) */
+.custom-prime-upload .p-fileupload-files {
+    padding: 0;
+}
+
+.custom-prime-upload .p-fileupload-row {
+    display: flex;
+    align-items: center;
+}
+
+.custom-prime-upload .p-fileupload-filename {
+    font-size: 0.875rem;
+    color: var(--color-text-black);
+    font-weight: 500;
+}
+
+/* Error State */
+.file-upload-container.has-error .custom-prime-upload .p-fileupload-content {
+    border-color: var(--color-danger-500);
+}
+
+/* Error Message */
+.error-message {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--color-danger-600);
+    line-height: 1.5;
+    margin-top: 0.25rem;
+}
+
+/* Helper Text */
+.helper-text {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-gray-700);
+    line-height: 1.5;
+    margin-top: 0.25rem;
+}
+
+/* Drag Over State */
+.custom-prime-upload .p-fileupload-content.p-fileupload-highlight {
+    border-color: var(--color-brand-500);
+    background-color: var(--color-brand-50);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .upload-header-wrapper {
+        /* padding: 1rem; */
+        padding: 8px;
+        gap: 1rem;
+    }
+
+    .upload-plus-button {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        border-width: 2px;
+    }
+
+    .upload-plus-button svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .upload-file-size {
+        font-size: 0.875rem;
+    }
+
+    .upload-progress-bar {
+        height: 8px;
+    }
+
+    .custom-prime-upload .p-fileupload-content {
+        padding-top: 80px;
+        min-height: 200px;
+    }
+
+    .custom-upload-empty {
+        padding: 2rem 1rem;
+    }
+
+    .upload-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .upload-icon svg {
+        width: 36px;
+        height: 36px;
+    }
+}

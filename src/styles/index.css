@@ -1,0 +1,243 @@
+@import 'tailwindcss';
+@import './custom-table.css';
+@import './quotes-table.css';
+@import './blanket-sponsorship.css';
+@import './orders-table.css';
+@import './creatives-upload.css';
+@import './payment.css';
+@import './fonts.css';
+@import './support/supportFileUpload.css';
+
+@theme {
+    /* Fonts */
+    --font-poppins: 'Poppins', sans-serif;
+    --font-ubuntu: 'Ubuntu', sans-serif;
+
+    /* Brand Colors (Purple) */
+    --color-brand-50: #f0e7f7;
+    --color-brand-100: #d1b4e6;
+    --color-brand-200: #ba90d9;
+    --color-brand-300: #9b5dc8;
+    --color-brand-400: #883dbd;
+    --color-brand-500: #6a0dad;
+    --color-brand-600: #600c9d;
+    --color-brand-700: #4b097b;
+    --color-brand-800: #3a075f;
+    --color-brand-900: #2d0549;
+
+    /* Sunshine Yellow */
+    --color-sunshine-50: #fffbe6;
+    --color-sunshine-100: #fff3b0;
+    --color-sunshine-200: #ffed8a;
+    --color-sunshine-300: #ffe454;
+    --color-sunshine-400: #ffdf33;
+    --color-sunshine-500: #ffd700;
+    --color-sunshine-600: #e8c400;
+    --color-sunshine-700: #b59900;
+    --color-sunshine-800: #8c7600;
+    --color-sunshine-900: #6b5a00;
+
+    /* Coral Red */
+    --color-coral-50: #fff1ef;
+    --color-coral-100: #ffd2ce;
+    --color-coral-200: #ffbdb6;
+    --color-coral-300: #ff9f95;
+    --color-coral-400: #ff8c81;
+    --color-coral-500: #ff6f61;
+    --color-coral-600: #e86558;
+    --color-coral-700: #b54f45;
+    --color-coral-800: #8c3d35;
+    --color-coral-900: #6b2f29;
+
+    /* Teal Blue */
+    --color-teal-50: #e6f2f2;
+    --color-teal-100: #b0d8d8;
+    --color-teal-200: #8ac5c5;
+    --color-teal-300: #54aaaa;
+    --color-teal-400: #339999;
+    --color-teal-500: #008080;
+    --color-teal-600: #007474;
+    --color-teal-700: #005b5b;
+    --color-teal-800: #004646;
+    --color-teal-900: #003636;
+
+    /* Success (Green) */
+    --color-success-50: #edf7ee;
+    --color-success-100: #c8e6c9;
+    --color-success-200: #addaaf;
+    --color-success-300: #87c98a;
+    --color-success-400: #70bf73;
+    --color-success-500: #4caf50;
+    --color-success-600: #459f49;
+    --color-success-700: #367c39;
+    --color-success-800: #2a602c;
+    --color-success-900: #204a22;
+
+    /* Warning (Orange/Yellow) */
+    --color-warning-50: #fff7e6;
+    --color-warning-100: #ffe5b0;
+    --color-warning-200: #ffd88a;
+    --color-warning-300: #ffc754;
+    --color-warning-400: #ffbc33;
+    --color-warning-500: #ffab00;
+    --color-warning-600: #e89c00;
+    --color-warning-700: #b57900;
+    --color-warning-800: #8c5e00;
+    --color-warning-900: #6b4800;
+
+    /* Danger (Red) */
+    --color-danger-50: #fcebeb;
+    --color-danger-100: #f7c2c0;
+    --color-danger-200: #f3a4a2;
+    --color-danger-300: #ee7a78;
+    --color-danger-400: #ea615d;
+    --color-danger-500: #e53935;
+    --color-danger-600: #d03430;
+    --color-danger-700: #a32826;
+    --color-danger-800: #7e1f1d;
+    --color-danger-900: #601816;
+
+    /* Information (Blue) */
+    --color-information-50: #e9f2ff;
+    --color-information-100: #bbd6ff;
+    --color-information-200: #9ac2ff;
+    --color-information-300: #6ca7ff;
+    --color-information-400: #5095ff;
+    --color-information-500: #247bff;
+    --color-information-600: #2170e8;
+    --color-information-700: #1a57b5;
+    --color-information-800: #14448c;
+    --color-information-900: #0f346b;
+
+    /* Other (Pink/Magenta) */
+    --color-other-50: #fff2ff;
+    --color-other-100: #ffd6fe;
+    --color-other-200: #ffc2fd;
+    --color-other-300: #ffa6fc;
+    --color-other-400: #ff95fc;
+    --color-other-500: #ff7afb;
+    --color-other-600: #e86fe4;
+    --color-other-700: #b557b2;
+    --color-other-800: #8c438a;
+    --color-other-900: #6b3369;
+
+    /* Grays */
+    --color-gray-50: #fdfdfd;
+    --color-gray-100: #f9f9f9;
+    --color-gray-200: #f6f6f6;
+    --color-gray-300: #f2f2f2;
+    --color-gray-400: #efefef;
+    --color-gray-500: #ebebeb;
+    --color-gray-600: #d6d6d6;
+    --color-gray-650: #d7d7d7;
+    --color-gray-700: #a7a7a7;
+    --color-gray-750: #a9acb4;
+    --color-gray-800: #818181;
+    --color-gray-850: #6d6d6d;
+    --color-gray-900: #636363;
+    --color-gray-950: #292d32;
+
+    /* Warm White */
+    --color-warm-50: #fffefe;
+    --color-warm-100: #fffdfa;
+    --color-warm-200: #fffcf8;
+    --color-warm-300: #fffbf5;
+    --color-warm-400: #fffaf3;
+    --color-warm-500: #fff9f0;
+    --color-warm-600: #e8e3da;
+    --color-warm-700: #b5b1aa;
+    --color-warm-800: #8c8984;
+    --color-warm-900: #6b6965;
+
+    /* Text Colors */
+    --color-text-charcoal: #333333;
+    --color-text-white: #ffffff;
+    --color-text-black: #000000;
+    --color-text-dark: #1d1d1d;
+
+    /* Legacy/Semantic Tokens (for backward compatibility) */
+    --color-brand-primary-500: #6a0dad;
+    --color-brand-primary-800: #3a075f;
+    --color-border-gray: #c7c7c7;
+    --color-border-gray-light: #dfdfdf;
+    --color-border-gray-600: #d6d6d6;
+    --color-border-gray-800: #818181;
+    --color-primary-text: #000000;
+    --color-secondary-text: #707070;
+    --color-tertiary-text: #636363;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-poppins);
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+}
+
+/* Apply Poppins font to all PrimeReact components globally */
+.p-component,
+.p-component *,
+[class*='p-'],
+[class*='p-'] * {
+    font-family: var(--font-poppins) !important;
+}
+
+/* Override Poppins font when font-ubuntu class is explicitly used */
+/* These selectors match or exceed the specificity of the global Poppins rule */
+.p-component * .font-ubuntu,
+[class*='p-'] * .font-ubuntu,
+.font-ubuntu {
+    font-family: var(--font-ubuntu) !important;
+}
+
+/* 
+h1,
+h2,
+h3 {
+    font-family: var(--font-ubuntu) !important;
+} */
+
+/* Custom Dropdown */
+.custom-dropdown {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 2px 8px;
+    background-color: white;
+    border: 1px solid var(--color-border-gray);
+}
+
+.custom-dropdown .p-dropdown-label {
+    padding: 6px 8px;
+    background-color: white;
+}
+
+.custom-dropdown .p-dropdown-trigger {
+    color: #111827;
+    width: 1.5rem;
+}
+
+.custom-dropdown:hover {
+    border-color: var(--color-border-gray);
+}
+
+.custom-dropdown-panel {
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: white !important;
+    border-color: var(--color-border-gray);
+}
+
+/* Hide Leaflet attribution control */
+.leaflet-touch .leaflet-control-attribution {
+    display: none !important;
+}

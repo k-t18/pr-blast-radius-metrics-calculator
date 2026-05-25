@@ -1,0 +1,228 @@
+/* Review and Consent Styles */
+
+/* Review Sections */
+.review-sections {
+    margin-bottom: 2.5rem;
+}
+
+.review-section-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--color-gray-300);
+}
+
+.review-section-item:last-child {
+    border-bottom: 2px solid var(--color-gray-400);
+    margin-bottom: 2rem;
+}
+
+.review-section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text-black);
+    margin: 0;
+    letter-spacing: 0.01em;
+}
+
+.edit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color: var(--color-text-charcoal);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    padding: 0;
+}
+
+.edit-button:hover {
+    background-color: var(--color-gray-200);
+    color: var(--color-text-black);
+}
+
+.edit-button:active {
+    background-color: var(--color-gray-300);
+}
+
+.edit-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Consent Section */
+.consent-section {
+    margin-bottom: 2.5rem;
+}
+
+.consent-intro {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-black);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.consent-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-gray-300);
+}
+
+.consent-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.consent-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.consent-number {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-black);
+}
+
+.consent-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-black);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.consent-description {
+    font-size: 0.875rem;
+    color: var(--color-text-charcoal);
+    line-height: 1.6;
+    margin: 0 0 0.75rem 0;
+    font-style: italic;
+}
+
+.consent-link {
+    font-size: 0.875rem;
+    color: var(--color-brand-500);
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 1rem;
+    transition: color 0.2s;
+}
+
+.consent-link:hover {
+    color: var(--color-brand-600);
+}
+
+.consent-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border: 2px solid var(--color-gray-600);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    accent-color: var(--color-brand-500);
+    transition: all 0.2s;
+}
+
+.checkbox-input:hover {
+    border-color: var(--color-brand-500);
+}
+
+.checkbox-input:checked {
+    background-color: var(--color-brand-500);
+    border-color: var(--color-brand-500);
+}
+
+.checkbox-input:focus {
+    outline: 2px solid var(--color-brand-200);
+    outline-offset: 2px;
+}
+
+.checkbox-label {
+    font-size: 0.9375rem;
+    color: var(--color-gray-700);
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+    line-height: 1.4;
+}
+
+.checkbox-input:checked + .checkbox-label {
+    color: var(--color-text-black);
+}
+
+/* Form Actions */
+.form-actions {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .review-section-item {
+        padding: 1rem 0;
+    }
+
+    .review-section-title {
+        font-size: 1rem;
+    }
+
+    .edit-button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .edit-button svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .consent-intro {
+        font-size: 0.9375rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .consent-item {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .consent-title {
+        font-size: 0.9375rem;
+    }
+
+    .consent-description {
+        font-size: 0.8125rem;
+    }
+
+    .consent-link {
+        font-size: 0.8125rem;
+    }
+
+    .checkbox-label {
+        font-size: 0.875rem;
+    }
+
+    .form-actions {
+        margin-top: 2rem;
+    }
+}

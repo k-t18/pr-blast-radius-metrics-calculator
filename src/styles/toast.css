@@ -1,0 +1,23 @@
+.chances-toast {
+    margin: 12px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.chances-toast-content {
+    padding: 12px 14px;
+}
+
+.chances-toast-content {
+    gap: 15px !important;
+}
+
+/* Add breathing room between text and close icon */
+.chances-toast .p-toast-message {
+    padding-right: 32px;
+}
+
+.chances-toast .p-toast-icon-close {
+    margin-right: 10px;
+}

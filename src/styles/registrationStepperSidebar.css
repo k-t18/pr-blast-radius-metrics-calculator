@@ -1,0 +1,203 @@
+/**
+ * RegistrationStepper Styles
+ *
+ * Vertical stepper component styles using design tokens
+ */
+
+.registration-stepper {
+    padding: 1.5rem 1rem;
+    width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    box-shadow: 2px 4px 4px 0px #8f8f8f40;
+}
+
+/* Header */
+.stepper-header {
+    margin-bottom: 1.5rem;
+}
+
+.stepper-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text-black);
+    margin: 0 0 0.25rem 0;
+}
+
+.stepper-subtitle {
+    font-size: 0.813rem;
+    color: var(--color-gray-800);
+    margin: 0;
+}
+
+/* Steps Container */
+.stepper-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+/* Step Wrapper */
+.step-wrapper {
+    position: relative;
+}
+
+/* Step Item */
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0.625rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.step-item.step-clickable {
+    cursor: pointer;
+}
+
+.step-item.step-clickable:hover {
+    background-color: var(--color-brand-50);
+}
+
+.step-item.step-current {
+    background-color: var(--color-brand-50);
+}
+
+.step-item.step-disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Step Indicator (number/check + connector line) */
+.step-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.step-number-circle {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-gray-400);
+    background-color: var(--color-text-white);
+    transition: all 0.2s;
+    position: relative;
+    z-index: 2;
+}
+
+.step-item.step-current .step-number-circle {
+    border-color: var(--color-brand-500);
+    background-color: var(--color-brand-500);
+}
+
+.step-item.step-completed .step-number-circle {
+    border-color: var(--color-brand-500);
+    background-color: var(--color-brand-500);
+    color: var(--color-text-white);
+}
+
+.step-number {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-gray-600);
+}
+
+.step-item.step-current .step-number {
+    color: var(--color-text-white);
+}
+
+.step-check-icon {
+    color: var(--color-text-white);
+}
+
+/* Connector Line */
+.step-connector {
+    width: 2px;
+    height: 2rem;
+    background-color: var(--color-gray-400);
+    margin-top: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.step-item.step-completed .step-connector {
+    background-color: var(--color-brand-500);
+}
+
+/* Step Content */
+.step-content-registration-sidebar {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1;
+}
+
+.step-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-icon {
+    color: var(--color-gray-700);
+    transition: color 0.2s;
+}
+
+.step-item.step-current .step-icon {
+    color: var(--color-text-black);
+}
+
+.step-item.step-completed .step-icon {
+    color: var(--color-text-black);
+}
+
+.step-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-gray-900);
+    line-height: 1.3;
+}
+
+.step-item.step-current .step-title {
+    font-weight: 700;
+    color: var(--color-text-black);
+}
+
+/* Keyboard Focus */
+.step-item:focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .registration-stepper {
+        padding: 1.25rem 0.875rem;
+    }
+
+    .stepper-title {
+        font-size: 1rem;
+    }
+
+    .step-item {
+        padding: 0.625rem 0.5rem;
+    }
+
+    .step-number-circle {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .step-title {
+        font-size: 0.813rem;
+    }
+}

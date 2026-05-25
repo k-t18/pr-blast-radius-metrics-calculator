@@ -1,0 +1,15 @@
+.orders-table .p-datatable-tbody > tr.p-highlight {
+    background-color: #f0e7f7 !important;
+    position: relative;
+    box-shadow: inset 0 0 0 1.5px #9b5dc8;
+    z-index: 1;
+}
+
+.orders-table .p-datatable-tbody .prize-agreement {
+    padding: 4px 10px 0px 17px;
+}
+
+.order-sidebar .deadline-date {
+    flex-direction: row !important;
+    gap: 10px !important;
+}

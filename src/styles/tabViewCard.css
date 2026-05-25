@@ -1,0 +1,13 @@
+/* accordian styles */
+.card-accordion .p-accordion-tab .p-accordion-header-link {
+    padding: 0 !important;
+    /* margin-bottom: 16px !important; */
+}
+
+.card-accordion .p-accordion-tab {
+    margin-bottom: 24px !important;
+}
+
+.card-accordion .p-accordion-content {
+    padding: 0 18px 24px !important;
+}

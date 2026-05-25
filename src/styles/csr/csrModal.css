@@ -1,0 +1,100 @@
+/* Share Certificate Modal Styles */
+
+.share-buttons-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #efefef;
+}
+
+.share-icon-container {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+}
+
+.share-icon-container--selected {
+    filter: none;
+    opacity: 1;
+}
+
+.share-icon-container--copy-link.share-icon-container--selected {
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.share-icon-container--copy-link.share-icon-container--copied {
+    animation: copyBlink 0.5s ease-in-out;
+}
+
+@keyframes copyBlink {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.share-icon-container--unselected {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+.share-icon-container--disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.share-icon-wrapper {
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.share-button-reset {
+    margin: 0;
+    padding: 0;
+}
+
+.share-icon-container--instagram {
+    border-radius: 50%;
+}
+
+.share-icon-container--instagram.selected {
+    background: linear-gradient(45deg, #833ab4 0%, #e1306c 50%, #fcaf45 100%);
+}
+
+.share-icon-container--instagram.unselected {
+    background: transparent;
+}
+
+.share-icon-wrapper--instagram {
+    filter: grayscale(100%);
+}
+
+.share-icon-wrapper--instagram.selected {
+    filter: none;
+}

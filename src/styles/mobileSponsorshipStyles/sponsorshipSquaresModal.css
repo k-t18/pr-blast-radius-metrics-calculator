@@ -1,0 +1,137 @@
+/* Sponsor Modal Typography Styles */
+.sponsor-modal-content .input-field-label,
+.sponsor-modal-content .quantity-input-label {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: var(--color-text-black);
+}
+
+/* Spacing: 8px between label and input */
+.sponsor-modal-content .input-field-container {
+    gap: 6px;
+}
+
+/* Spacing: 8px between label and input for flex-col containers (but not the main container) */
+.sponsor-modal-content > * .flex.flex-col {
+    gap: 6px;
+}
+
+/* Spacing: 24px between main divs */
+.sponsor-modal-content.flex.flex-col {
+    gap: 24px;
+}
+
+/* Dropdown specific styles */
+/* Override container width to allow fixed dropdown width */
+.sponsor-modal-content .sponsor-dropdown-wrapper {
+    width: auto;
+    display: inline-block;
+}
+
+/* Override the dropdown field wrapper if it exists */
+.sponsor-modal-content .sponsor-dropdown-wrapper .dropdown-field {
+    width: auto;
+}
+
+/* Target the PrimeReact dropdown element - using unique class for specificity */
+/* Structure 1: .dropdown-field wraps .p-dropdown */
+.sponsor-modal-content .sponsor-dropdown-wrapper .dropdown-field .p-dropdown,
+.sponsor-modal-content .sponsor-dropdown-wrapper .sponsor-dropdown .p-dropdown {
+    width: 100%;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 8px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Structure 2: .dropdown-field is on the same element as .p-dropdown */
+.sponsor-modal-content .sponsor-dropdown-wrapper .dropdown-field.p-dropdown,
+.sponsor-modal-content .sponsor-dropdown-wrapper .p-dropdown.dropdown-field,
+.sponsor-modal-content .sponsor-dropdown-wrapper .sponsor-dropdown.p-dropdown,
+.sponsor-modal-content .sponsor-dropdown-wrapper .p-dropdown.sponsor-dropdown {
+    width: 100%;
+    /* height: 36px;
+        min-height: 36px;
+        max-height: 36px; */
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 8px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Ensure the dropdown label container uses flex with space-between */
+.sponsor-modal-content .sponsor-dropdown-wrapper .p-dropdown .p-dropdown-label-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex: 1;
+}
+
+/* Dropdown text/label font styles */
+.sponsor-modal-content .sponsor-dropdown-wrapper .p-dropdown .p-dropdown-label {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: start;
+    color: var(--color-gray-800);
+}
+
+.dropdown-panel .p-dropdown-item {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: start;
+    color: var(--color-text-charcoal);
+}
+
+/* Placeholder text styles */
+.sponsor-modal-content .sponsor-dropdown-wrapper .p-dropdown .p-dropdown-label.p-placeholder {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: start;
+    color: var(--color-gray-800);
+}
+
+/* Value display h4 elements (Available Squares, Unit Price, Min Reward) */
+.sponsor-modal-content h4.text-base.text-primary-text {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: var(--color-text-black);
+}
+
+.add-button {
+    width: 43px;
+    height: 36px;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-ubuntu);
+}

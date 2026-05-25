@@ -1,0 +1,210 @@
+/* table styles  */
+
+.custom-table .p-datatable-header {
+    border: none;
+}
+
+.custom-table .p-datatable-thead > tr > th {
+    background-color: var(--color-gray-500);
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 1rem;
+    border: none;
+}
+
+.custom-table .p-datatable-tbody > tr > td {
+    padding: 10px 10px 10px 17px;
+    border: none;
+    color: var(--color-text-black);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.custom-table .p-datatable-tbody > tr {
+    border-bottom: 1px solid var(--color-gray-600);
+}
+
+.custom-table .p-datatable-thead > tr > th .p-column-title {
+    color: var(--color-text-black);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.custom-table .p-datatable-thead > tr > th:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.custom-table .p-datatable-thead > tr > th:last-child {
+    border-top-right-radius: 4x;
+    border-bottom-right-radius: 4px;
+}
+
+/* Align ONLY the Total Amount column header */
+.custom-table .p-datatable-thead > tr > th.header-total-amount > .p-column-header-content {
+    display: flex;
+    justify-content: end;
+}
+
+/* table drawer/sidebar styles */
+.custom-detail-sidebar .p-sidebar-content {
+    padding: 50px 16px 0;
+}
+
+.custom-detail-sidebar .p-sidebar-header {
+    display: none;
+}
+
+.custom-table tbody tr {
+    cursor: pointer;
+}
+
+/* table filter overlay panel styles */
+.custom-filter-overlay-panel.p-overlaypanel {
+    padding: 0.5rem;
+    border: 1px solid var(--color-gray-300);
+    box-shadow:
+        0 4px 6px -1px color-mix(in srgb, var(--color-text-black) 10%, transparent),
+        0 2px 4px -1px color-mix(in srgb, var(--color-text-black) 6%, transparent);
+    border-radius: 0.5rem;
+    min-width: 150px;
+}
+
+.custom-filter-overlay-panel .p-overlaypanel-content {
+    padding: 0;
+}
+
+/* Checkbox styles for DataTable selection */
+.custom-table .p-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.custom-table .p-checkbox .p-checkbox-box {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid var(--color-gray-700);
+    border-radius: 4px;
+    background: var(--color-text-white);
+    transition: all 0.2s;
+}
+
+.custom-table .p-checkbox .p-checkbox-box:not(.p-disabled):hover {
+    border-color: var(--color-gray-800);
+}
+
+.custom-table .p-checkbox .p-checkbox-box[data-p-highlight='true'] {
+    border-color: var(--color-brand-primary-400);
+    background-color: var(--color-brand-primary-500);
+    color: var(--color-text-white);
+}
+
+.custom-table .p-checkbox .p-checkbox-box[data-p-highlight='true'] .p-checkbox-icon {
+    color: var(--color-text-white);
+}
+
+.custom-table .p-checkbox .p-checkbox-box .p-checkbox-icon {
+    font-size: 0.875rem;
+}
+
+.custom-table .p-checkbox .p-checkbox-box:focus,
+.custom-table .p-checkbox:focus .p-checkbox-box {
+    outline: none;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-gray-800) 20%, transparent);
+}
+
+/* pagination styles */
+
+.custom-table .p-dropdown {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-gray-600);
+    padding: 0;
+    max-width: 62px;
+    width: 100%;
+    height: 36px;
+}
+
+.custom-table .p-dropdown .p-dropdown-label {
+    padding: 0 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Paginator dropdown panel - rendered at body level */
+/* Target all dropdown panels */
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item,
+.p-dropdown-panel .p-dropdown-item {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    color: var(--color-text-black) !important;
+    padding: 0.5rem 0.75rem !important;
+}
+
+/* .custom-table .p-icon {
+    width: 16px;
+} */
+
+.custom-table .p-dropdown .p-dropdown-trigger {
+    width: auto;
+    padding: 0 8px;
+}
+
+.custom-table .p-paginator {
+    margin: 10px 0;
+}
+
+.custom-table .p-paginator-pages {
+    border-radius: 50%;
+    font-size: 10px;
+    color: var(--color-brand-500);
+    /* width: 36px;
+    height: 36px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-table .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background-color: var(--color-brand-50);
+    border-radius: 50%;
+    color: var(--color-brand-primary-500);
+}
+
+.custom-table .p-paginator .p-paginator-pages .p-paginator-page.p-highlight:hover {
+    background-color: var(--color-gray-500) !important;
+}
+
+/* Arrow icons (Next, Prev, First, Last) when enabled */
+.custom-table .p-paginator .p-paginator-element:not(.p-disabled) .p-paginator-icon {
+    color: black !important;
+    font-weight: 400;
+}
+
+/* empty message styles */
+.custom-table .p-datatable-emptymessage > td {
+    text-align: center;
+    font-size: 14px !important;
+}
+
+/* loader styles */
+.custom-table .p-datatable-loading-overlay {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.custom-table .p-datatable-loading-overlay .p-datatable-loading-icon {
+    color: #6a0dad;
+}
+
+.circular-loader-brand svg circle,
+.p-progress-spinner.circular-loader-brand svg circle {
+    stroke: var(--color-brand-500) !important;
+}

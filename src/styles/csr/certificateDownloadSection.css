@@ -1,0 +1,50 @@
+.certificate-details-section {
+    padding: 33.5px 156px;
+    background-color: var(--color-brand-50);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 16px;
+}
+
+.certificate-details-section-header {
+    max-width: 636px;
+    width: 100%;
+}
+
+.certificate-details-section-header > h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-text-black);
+    font-family: var(--font-poppins);
+    margin-bottom: 16px;
+}
+
+.certificate-details-section-header > p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-text-black);
+    font-family: var(--font-poppins);
+    margin-bottom: 16px;
+}
+
+.certificate-details-section-header-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.certificate-details-section-header-actions .download-certificate-button {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-text-white);
+    border-radius: 4px;
+}
+
+.certificate-details-section-header-actions .share-on-socials-button {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-text-black);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px;
+}

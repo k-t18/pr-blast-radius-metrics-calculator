@@ -1,0 +1,90 @@
+/**
+ * Central export file for all custom icon components.
+ * That allows to import icons from a single source instead of individual files.
+ *
+ * Each icon component is a lightweight wrapper around a Phosphor icon,
+ * with support for `size` and `color` props (defaulting to 24px and `currentColor` respectively).
+ */
+
+export { default as ChartBar } from './ChartBar';
+export { default as Gift } from './Gift';
+export { default as HandHeart } from './HandHeart';
+export { default as Headset } from './Headset';
+export { default as Images } from './Images';
+export { default as Invoice } from './Invoice';
+export { default as Megaphone } from './Megaphone';
+export { default as MoneyWavy } from './MoneyWavy';
+export { default as SignOut } from './SignOut';
+export { default as SketchLogo } from './SketchLogo';
+export { default as Trophy } from './Trophy';
+export { default as Square } from './Square';
+export { default as Crown } from './Crown';
+export { default as Hourglass } from './Hourglass';
+export { default as Check } from './Check';
+export { default as Cross } from './Cross';
+export { default as Calendar } from './Calendar';
+export { default as Lightning } from './Lightning';
+export { default as Rectangle } from './Rectangle';
+export { default as Arrow } from './Arrow';
+export { default as ArrowLeft } from './Arrow';
+export { default as ShoppingCart } from './ShoppingCart';
+export { default as Building } from './Building';
+export { default as LocationPin } from './LocationPin';
+export { default as Contact } from './Contact';
+export { default as BookOpenText } from './BookOpenText';
+export { default as Handshake } from './Handshake';
+export { default as Confetti } from './Confetti';
+export { default as Brain } from './Brain';
+export { default as SealQuestion } from './SealQuestion';
+export { default as Plus } from './Plus';
+export { default as Gear } from './Gear';
+export { default as Diamond } from './Diamond';
+export { default as PlayCircle } from './PlayCircle';
+export { default as GearPlay } from './GearPlay';
+export { default as CursorClick } from './CursorClick';
+export { default as Sparkle } from './Sparkle';
+export { default as Signpost } from './Signpost';
+export { default as Category } from './Category';
+export { default as SpinnerGap } from './SpinnerGap';
+export { default as DropSimple } from './DropSimple';
+export { default as ArrowFatLineRight } from './ArrowFatLineRight';
+export { default as Video } from './Video';
+export { default as CaretUp } from './CaretUp';
+export { default as CaretDown } from './CaretDown';
+export { default as CaretRight } from './CaretRight';
+export { default as Television } from './Television';
+export { default as Truck } from './Truck';
+export { default as Microphone } from './Microphone';
+export { default as Palette } from './Palette';
+export { default as Trash } from './Trash';
+export { default as ArrowsCounterClockwise } from './ArrowsCounterClockwise';
+export { default as SingleImage } from './SingleImage';
+export { default as Eye } from './Eye';
+export { default as EyeOff } from './EyeOff';
+export { default as HandPointing } from './HandPointing';
+export { default as Target } from './Target';
+export { default as Money } from './Money';
+export { default as Info } from './Info';
+export { default as Download } from './Download';
+export { default as Warning } from './Warning';
+export { default as User } from './User';
+export { default as Percent } from './Percent';
+export { default as ArrowSquareOut } from './ArrowSquareOut';
+export { default as ShareNetwork } from './ShareNetwork';
+export { default as Copy } from './Copy';
+export { default as LinkSimple } from './LinkSimple';
+export { default as InstagramLogo } from './InstagramLogo';
+export { default as Bell } from './Bell';
+export { default as Wallet } from './Wallet';
+export { default as Receipt } from './Receipt';
+export { default as FileText } from './FileText';
+export { default as X } from './X';
+export { default as PalmpayLogo } from './PalmpayLogo';
+export { default as PaystackLogo } from './PaystackLogo';
+export { default as Circle } from './Circle';
+export { default as GameController } from './GameController';
+export { default as Play } from './Play';
+export { default as Clock } from './Clock';
+export { default as MagicWand } from './MagicWand';
+export { default as DeviceMobileCamera } from './DeviceMobileCamera';
+export { default as FunnelSimpleIcon } from './FunnelSimpleIcon';

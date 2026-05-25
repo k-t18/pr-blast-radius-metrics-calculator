@@ -1,0 +1,50 @@
+.nigeria-map .chart-container,
+.nigeria-map .chart-container:focus,
+.nigeria-map .chart-container:focus-visible,
+.nigeria-map .chart-container:active,
+.nigeria-map .chart-container *:focus,
+.nigeria-map .chart-container *:focus-visible,
+.nigeria-map .chart-container *:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.nigeria-map .leaflet-container {
+    background: var(--color-text-white);
+}
+
+.nigeria-map .leaflet-tile-pane {
+    opacity: 0;
+}
+
+.nigeria-map .leaflet-control-container {
+    display: block;
+}
+
+.nigeria-map .leaflet-control-zoom {
+    border: 1px solid var(--color-gray-700);
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.nigeria-map .leaflet-control-zoom-in,
+.nigeria-map .leaflet-control-zoom-out {
+    background-color: var(--color-text-white);
+    color: var(--color-text-charcoal);
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.nigeria-map .leaflet-control-zoom-in:hover,
+.nigeria-map .leaflet-control-zoom-out:hover {
+    background-color: var(--color-gray-100);
+}
+
+.nigeria-map .leaflet-popup-content-wrapper {
+    border-radius: 4px;
+}
+
+.nigeria-map .leaflet-popup-tip {
+    background: var(--color-text-white);
+}

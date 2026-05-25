@@ -1,0 +1,12 @@
+npm_exec() {
+  command npm "$@" 2>/dev/null || command npx npm "$@"
+}
+
+echo "Running build before push..."
+if ! npm_exec run build; then
+  echo "Build failed. Aborting push."
+  exit 1
+fi
+
+echo "Build succeeded. Generating PR metadata..."
+npm_exec run generate-pr-md

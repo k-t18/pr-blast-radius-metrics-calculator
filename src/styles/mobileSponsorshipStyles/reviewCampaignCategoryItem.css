@@ -1,0 +1,160 @@
+.review-item-container {
+    margin-bottom: 2rem;
+}
+
+/* Modal Title */
+.review-modal-title {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+/* 1 - Square Price (and other price values) */
+.review-item-price-text {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+/* 2 - Collapsible Text */
+.review-item-collapsible-btn {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 0.25rem;
+}
+
+.review-item-collapsible-btn:focus {
+    outline: none;
+}
+
+.review-item-collapsible-btn svg {
+    color: #000000;
+}
+
+/* 3 - Internal Campaign Details Heading Label */
+.review-item-detail-label {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #000000;
+    margin-bottom: 0.25rem;
+}
+
+/* Internal Campaign Details Value */
+.review-item-detail-value {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+/* Filter Values */
+.review-item-filter-value {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #818181;
+}
+
+/* 4 - Table CSS */
+.review-item-table-container {
+    background-color: transparent;
+    border-radius: 0;
+    max-width: 400px;
+    width: 100%;
+    overflow: visible;
+}
+
+.review-item-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.review-item-table thead {
+    background-color: var(--color-gray-600);
+}
+
+.review-item-table thead th {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: black;
+    padding: 4px 8px;
+    text-align: left;
+}
+
+.review-item-table thead th:first-child {
+    border-top-left-radius: 4px;
+}
+
+.review-item-table thead th:last-child {
+    border-top-right-radius: 4px;
+    text-align: right;
+}
+
+.review-item-table tbody td {
+    padding: 4px 8px;
+}
+
+.review-item-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Table Body Text (Non-price) */
+.review-item-table-text {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+/* Subtotal/Total Row Styling */
+.review-item-table-subtotal-label {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.review-item-table-total {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    /* Bold for total */
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+}

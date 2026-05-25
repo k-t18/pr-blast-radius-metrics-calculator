@@ -1,0 +1,107 @@
+/**
+ * Notification Dropdown Styles
+ *
+ * Custom styles for the NotificationDropdown component
+ */
+
+/* Notification Overlay Panel */
+.notification-overlay-panel.p-overlaypanel {
+    border-radius: 12px !important;
+    margin-top: 12px;
+}
+
+.notification-overlay-panel.p-overlaypanel:before,
+.notification-overlay-panel.p-overlaypanel:after {
+    display: none !important;
+    /* Remove the triangle arrow */
+}
+
+.notification-overlay-panel .p-overlaypanel-content {
+    padding: 0 !important;
+}
+
+/* Notification TabView Styles */
+.notification-tabview .p-tabview-nav {
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid #d6d6d6;
+    margin-bottom: 0;
+    padding: 0.5rem 1.25rem 0;
+    /* Add horizontal padding here for the tabs text */
+}
+
+.notification-tabview .p-tabview-nav li {
+    margin-right: 1.5rem;
+}
+
+.notification-tabview .p-tabview-nav li .p-tabview-nav-link {
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 0.5rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 0;
+    color: #818181;
+    transition: color 0.2s;
+    box-shadow: none !important;
+}
+
+.notification-tabview .p-tabview-nav li .p-tabview-nav-link:hover {
+    color: #000000;
+}
+
+.notification-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    color: #000000;
+    font-weight: 500;
+}
+
+/* Animated underline for active tab */
+/* .notification-tabview .p-tabview-nav li .p-tabview-nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: transparent;
+    transform: scaleX(0);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.notification-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link::after {
+    background-color: var(--color-text-black);
+    transform: scaleX(1);
+} */
+
+.notification-tabview .p-tabview-nav li .p-tabview-nav-link > span {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.notification-tabview .p-tabview-panels {
+    background: transparent;
+    padding: 1rem;
+    /* Add horizontal padding for content */
+    margin-top: 0;
+}
+
+/* Custom Scrollbar for notifications list */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--color-gray-300);
+    border-radius: 20px;
+}

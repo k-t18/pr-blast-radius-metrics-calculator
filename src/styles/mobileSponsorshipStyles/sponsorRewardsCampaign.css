@@ -1,0 +1,14 @@
+/* Styles for SponsorRewardsCampaign component */
+.sponsor-rewards-campaign {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.campaign-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+}

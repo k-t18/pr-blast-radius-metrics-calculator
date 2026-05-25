@@ -1,0 +1,17 @@
+.progress-percentage {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 0.625rem;
+    line-height: 1rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.progress-percentage span {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 0.625rem;
+    line-height: 1rem;
+    letter-spacing: 0;
+    text-align: center;
+}

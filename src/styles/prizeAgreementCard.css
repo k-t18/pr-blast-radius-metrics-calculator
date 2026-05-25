@@ -1,0 +1,85 @@
+/**
+ * PrizeAgreementCard Styles
+ *
+ * Defines the visual appearance and layout of the prize agreement card container.
+ */
+
+.prize-agreement-card {
+    background-color: #ffffff;
+    border: 1px solid #4b5563;
+    /* gray-600 */
+    border-radius: 1rem;
+    /* rounded-2xl */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    /* shadow-sm */
+    margin-top: 1.5rem;
+    /* mt-6 */
+}
+
+/* Header Section */
+.prize-agreement-card-header {
+    padding: 0.75rem 1rem;
+    /* border-bottom: 1px solid #e5e7eb; */
+}
+
+/* Body/Content Section */
+.prize-agreement-card-body .custom-accordion .p-accordion-header-link svg {
+    /* margin-top: 15px; */
+}
+
+.prize-agreement-csr-form .radio-button-group {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 2rem !important;
+}
+
+.prize-agreement-csr-form .multi-select-container .multi-select {
+    max-width: 343px;
+}
+
+/* Footer Section */
+.prize-agreement-card-footer {
+    padding: 1.5rem 2rem;
+    /* background-color: #ffffff; */
+}
+
+/* Accordion Content Styles */
+.accordion-item-content {
+    padding: 0.5rem 0;
+}
+
+.accordion-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.accordion-input:focus {
+    border-color: #9333ea;
+    box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.1);
+}
+
+.accordion-input::placeholder {
+    color: #9ca3af;
+}
+
+.prize-agreement-accordion .p-accordion-header-link {
+    padding: 1.5rem 0rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .prize-agreement-card {
+        border-radius: 8px;
+    }
+
+    .prize-agreement-card-header,
+    .prize-agreement-card-body,
+    .prize-agreement-card-footer {
+        padding: 1rem 1.5rem;
+    }
+}

@@ -1,0 +1,131 @@
+.step-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.step-header {
+    gap: 1rem;
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column !important;
+    padding: 0 1rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.squares-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.squares-table-header {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 2.3fr 0.5fr;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    width: 100%;
+}
+
+.squares-table-header-label {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: var(--color-tertiary-text);
+}
+
+.add-square-button {
+    background-color: white !important;
+    color: #333333 !important;
+    border: 1px solid var(--color-gray-600) !important;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin-top: 0.5rem;
+    justify-content: flex-start;
+    max-width: 160px;
+}
+
+.add-square-button:hover {
+    border-color: var(--color-brand-500) !important;
+    background-color: var(--color-brand-50) !important;
+}
+
+.squares-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* padding: 0 2rem; */
+    background-color: var(--color-gray-50);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.summary-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.summary-label {
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-charcoal);
+}
+
+.summary-value {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: var(--color-text-black);
+    text-align: end;
+}
+
+.summary-total {
+    font-family: var(--font-poppins);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #6a0dad;
+    text-align: end;
+}
+
+.total-row .summary-label {
+    font-family: var(--font-ubuntu);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #6a0dad;
+}
+
+.step-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.save-continue-button {
+    /* min-width: 150px; */
+    font-family: var(--font-ubuntu) !important;
+    border-radius: 0.25rem;
+    font-size: 14px;
+    font-weight: 500;
+}

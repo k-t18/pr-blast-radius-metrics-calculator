@@ -1,0 +1,291 @@
+/**
+ * InputField Styles
+ *
+ * Custom styles for the InputField component
+ * Uses design system color tokens for consistency
+ */
+
+/* Container */
+.input-field-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.input-field-container.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Label */
+.input-field-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-charcoal);
+    line-height: 1.5;
+    /* margin-bottom: 0.25rem; */
+}
+
+.required-indicator {
+    color: var(--color-danger-500);
+    margin-left: 0.25rem;
+    font-weight: 600;
+}
+
+/* Input Wrapper */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-wrapper.has-prefix .input-field {
+    padding-left: 2.5rem !important;
+}
+
+.input-wrapper.has-suffix .input-field {
+    padding-right: 2.5rem;
+}
+
+/* Input Field */
+.input-field {
+    width: 100%;
+    padding: 0.5rem !important;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: var(--color-text-black);
+    background-color: var(--color-text-white);
+    border: 1px solid var(--color-gray-600);
+    border-radius: 0.25rem !important;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.input-field::placeholder {
+    color: var(--color-gray-800);
+    font-size: 0.75rem;
+}
+
+/* Textarea Placeholder Styles */
+.input-field-container textarea::placeholder {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: var(--color-gray-800);
+}
+
+/* Textarea Styles */
+.input-field-container textarea {
+    min-height: auto;
+    resize: vertical;
+}
+
+.input-field:hover:not(:disabled):not(:read-only) {
+    border-color: var(--color-brand-500);
+}
+
+.input-field-container textarea:hover:not(:disabled):not(:read-only) {
+    border-color: var(--color-brand-500);
+}
+
+.input-field-container textarea:focus {
+    border-color: var(--color-brand-500);
+    box-shadow: none;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: var(--color-brand-500);
+    box-shadow: none;
+}
+
+.input-field:disabled,
+.input-field:read-only {
+    background-color: var(--color-gray-300);
+    cursor: not-allowed;
+}
+
+.input-field:read-only {
+    cursor: default;
+}
+
+/* Error State */
+.input-field-container.has-error .input-field,
+.input-field.p-invalid {
+    border-color: var(--color-danger-500);
+}
+
+.input-field-container.has-error .input-field:focus,
+.input-field.p-invalid:focus {
+    border-color: var(--color-danger-500);
+    box-shadow: none;
+}
+
+/* Icons */
+.input-icon {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray-800);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.input-prefix-icon {
+    left: 0.75rem;
+}
+
+.input-suffix-icon {
+    right: 0.75rem;
+    pointer-events: auto;
+}
+
+.input-field-container.has-error .input-icon {
+    color: var(--color-danger-500);
+}
+
+/* Error Message */
+.error-message {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-danger-600);
+    line-height: 1.5;
+    margin-top: 0.25rem;
+}
+
+/* Helper Text */
+.helper-text {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-gray-800);
+    line-height: 1.5;
+    margin-top: 0.25rem;
+}
+
+/* Number Input - Remove Spinners (Optional) */
+.input-field[type='number']::-webkit-inner-spin-button,
+.input-field[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-field[type='number'] {
+    -moz-appearance: textfield;
+}
+
+/* Search Input Styling */
+.input-field[type='search']::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .input-field-label {
+        font-size: 0.8125rem;
+    }
+
+    .input-field {
+        font-size: 0.75rem;
+        padding: 0.625rem 0.875rem;
+    }
+
+    .input-wrapper.has-prefix .input-field {
+        padding-left: 2.25rem !important;
+    }
+
+    .input-wrapper.has-suffix .input-field {
+        padding-right: 2.25rem;
+    }
+
+    .error-message,
+    .helper-text {
+        font-size: 0.75rem;
+    }
+}
+
+/* Focus visible for accessibility */
+.input-field:focus-visible {
+    outline: none;
+}
+
+.dropdown-field {
+    padding: 0.5rem !important;
+}
+
+.dropdown-field:focus {
+    border: 1px solid var(--color-brand-500) !important;
+}
+
+.dropdown-field:hover:not(:disabled):not(:read-only) {
+    border: 1px solid var(--color-brand-500) !important;
+}
+
+.dropdown-field .p-dropdown-label {
+    font-size: 0.75rem !important;
+    line-height: 1.25rem !important;
+}
+
+.dropdown-field .p-dropdown-label {
+    font-size: 0.75rem !important;
+    line-height: 1.25rem !important;
+}
+
+.dropdown-field.p-dropdown:not(.p-disabled).p-focus {
+    box-shadow: none;
+}
+
+/* Phone Input Styles */
+.react-international-phone-input-container {
+    width: 100%;
+}
+
+.react-international-phone-input-container .react-international-phone-input {
+    width: 100%;
+    padding: 0.5rem !important;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: var(--color-text-black);
+    background-color: var(--color-text-white);
+    border: 1px solid var(--color-gray-600);
+    border-radius: 0 0.25rem 0.25rem 0 !important;
+    transition: all 0.2s;
+    outline: none;
+    height: auto;
+}
+
+.react-international-phone-input-container .react-international-phone-input:hover {
+    border-color: var(--color-brand-500);
+}
+
+.react-international-phone-input-container .react-international-phone-input:focus {
+    border-color: var(--color-brand-500);
+    box-shadow: none;
+}
+
+.react-international-phone-country-selector-button {
+    border: 1px solid var(--color-gray-600);
+    border-right: none;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+    padding: 0.5rem;
+    background-color: var(--color-text-white);
+    height: auto;
+}
+
+.react-international-phone-country-selector-button:hover {
+    border-color: var(--color-brand-500);
+    background-color: var(--color-text-white);
+}
+
+.react-international-phone-input-container .react-international-phone-input:disabled,
+.react-international-phone-country-selector-button--disabled {
+    background-color: var(--color-gray-300);
+    cursor: not-allowed;
+    opacity: 0.6;
+}

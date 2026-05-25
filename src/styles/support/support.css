@@ -1,0 +1,11 @@
+.support-submit {
+    width: 103px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font-ubuntu) !important;
+}
+
+.support-radio-button-group-label {
+    margin-bottom: 8px !important;
+}

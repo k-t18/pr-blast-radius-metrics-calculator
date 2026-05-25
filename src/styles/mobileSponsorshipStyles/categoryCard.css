@@ -1,0 +1,27 @@
+/**
+ * CategoryCard Styles
+ *
+ * Defines the visual appearance and layout of the category selection cards.
+ */
+
+.category-card {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.category-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category-card.selected {
+    background-color: var(--color-brand-50) !important;
+    border-color: var(--color-brand-500) !important;
+    box-shadow: 0 4px 12px rgba(106, 13, 173, 0.15);
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 0;
+}
+
+.category-card.selected:hover {
+    box-shadow: 0 4px 12px rgba(106, 13, 173, 0.2);
+}

@@ -1,0 +1,94 @@
+/* Shared styles for step collapse/expand functionality */
+
+.step-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Step title default styling */
+.step-header .step-title {
+    font-family: var(--font-ubuntu) !important;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin: 0;
+    /* Default color - will be overridden by active/inactive classes */
+    color: var(--color-brand-primary-500);
+}
+
+/* Step title styling based on active/inactive state */
+.step-active .step-header .step-title {
+    color: var(--color-brand-primary-500);
+}
+
+.step-inactive .step-header .step-title {
+    color: var(--color-gray-800);
+}
+
+.edit-step-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
+    color: var(--color-text-black);
+    transition:
+        color 0.3s ease-out,
+        opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.edit-step-button-visible {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.edit-step-button-hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+.edit-step-button-visible:hover {
+    color: #000000;
+    transform: scale(1.1);
+}
+
+.edit-step-button:focus {
+    outline: 2px solid var(--color-brand-primary-500);
+    outline-offset: 2px;
+    border-radius: 0.25rem;
+}
+
+.step-content {
+    overflow: hidden;
+    transition:
+        max-height 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        padding 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.step-content-expanded {
+    max-height: 5000px;
+    opacity: 1;
+    transform: translateY(0);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.step-content-collapsed {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    pointer-events: none;
+}

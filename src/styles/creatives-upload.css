@@ -1,0 +1,54 @@
+.custom-link-input {
+    font-size: 12px !important;
+    line-height: 20px !important;
+}
+
+.custom-link-input:focus {
+    border-color: var(--color-gray-600);
+    box-shadow: none;
+}
+
+.custom-link-input:hover:not(:disabled):not(:read-only) {
+    border-color: var(--color-gray-600);
+}
+
+.creatives-add-option-btn {
+    padding: 0;
+}
+
+.creatives-upload-delete-btn {
+    padding: 0;
+}
+
+.creaties-tabview {
+    margin-top: 0;
+}
+
+.creaties-tabview .p-tabview-nav {
+    display: flex;
+    gap: 18px;
+}
+
+.creaties-tabview .p-tabview-panels {
+    margin-top: 0 !important;
+}
+
+.creatives-modal-status {
+    padding: 6px !important;
+}
+
+.creatives-prime-upload .p-fileupload-content .p-progressbar {
+    display: none;
+}
+
+/* accordian styles */
+.creatives-accordion .p-accordion-tab .p-accordion-header-link {
+    padding: 0 !important;
+    /* margin-bottom: 16px !important; */
+}
+.creatives-accordion .p-accordion-tab {
+    margin-bottom: 24px !important;
+}
+.creatives-accordion .p-accordion-content {
+    padding: 0 18px 24px !important;
+}

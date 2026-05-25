@@ -1,0 +1,128 @@
+.date-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.date-input-label {
+    font-family: var(--font-poppins);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-charcoal);
+    line-height: 1.5;
+}
+
+.required-indicator {
+    color: var(--color-danger-500);
+    margin-left: 0.25rem;
+    font-weight: 600;
+}
+
+.date-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.p-datepicker-calendar {
+    font-size: 12px;
+    font-family: var(--font-poppins);
+    font-weight: 400;
+}
+
+/* PrimeReact Calendar Styles */
+.date-input-wrapper .date-input {
+    width: 100%;
+}
+
+.date-input-wrapper .date-input .p-inputtext {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-black);
+    background-color: var(--color-text-white);
+    border: 1px solid var(--color-gray-600);
+    border-radius: 0.25rem;
+    transition: all 0.2s;
+    outline: none;
+    font-family: var(--font-poppins);
+}
+
+.date-input-wrapper .date-input .p-inputtext::placeholder {
+    color: var(--color-gray-700);
+}
+
+.date-input-wrapper .date-input .p-inputtext:hover:not(:disabled) {
+    border-color: var(--color-brand-500);
+}
+
+.date-input-wrapper .date-input .p-inputtext:focus {
+    border-color: var(--color-brand-500);
+    box-shadow: none;
+}
+
+.date-input-wrapper .date-input .p-inputtext:disabled {
+    background-color: var(--color-gray-300);
+    cursor: not-allowed;
+}
+
+/* Calendar Icon Button */
+.date-input-wrapper .date-input .p-datepicker-trigger {
+    background-color: transparent;
+    border: 1px solid var(--color-gray-600);
+    border-left: 1px solid var(--color-gray-600);
+    color: var(--color-gray-800);
+    padding: 0.38rem 0.5rem;
+    border-radius: 0 0.25rem 0.25rem 0;
+    transition: all 0.2s;
+}
+
+.date-input-wrapper .date-input .p-datepicker-trigger:hover:not(:disabled) {
+    background-color: var(--color-gray-100);
+    color: var(--color-brand-500);
+    border-color: var(--color-brand-500);
+}
+
+.date-input-wrapper .date-input .p-datepicker-trigger:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Calendar Input Wrapper */
+.date-input-wrapper .date-input.p-calendar {
+    display: flex;
+    width: 100%;
+}
+
+.date-input-wrapper .date-input.p-calendar .p-inputtext {
+    border-radius: 0.25rem 0 0 0.25rem;
+    border-right: none;
+}
+
+.date-input-wrapper .date-input.p-calendar:not(.p-calendar-disabled):hover .p-inputtext {
+    border-color: var(--color-brand-500);
+}
+
+.date-input-wrapper .date-input.p-calendar:not(.p-calendar-disabled):hover .p-datepicker-trigger {
+    border-color: var(--color-brand-500);
+}
+
+.date-input-wrapper .date-input.p-calendar:not(.p-calendar-disabled).p-focus .p-inputtext {
+    border-color: var(--color-brand-500);
+    box-shadow: none;
+}
+
+.date-input-wrapper .date-input.p-calendar:not(.p-calendar-disabled).p-focus .p-datepicker-trigger {
+    border-color: var(--color-brand-500);
+}
+
+.date-input-wrapper .date-input.p-calendar.p-calendar-disabled .p-inputtext {
+    background-color: var(--color-gray-300);
+    cursor: not-allowed;
+}
+
+.p-datepicker {
+    border-radius: 0.25rem;
+}

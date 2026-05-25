@@ -1,0 +1,137 @@
+/* Custom Accordion Styles */
+.custom-accordion {
+    width: 100%;
+}
+
+/* Accordion Header Customization */
+.custom-accordion .p-accordion-header-link {
+    background: transparent !important;
+    border: none !important;
+    padding: 1.5rem 0rem !important;
+    transition: all 0.2s ease;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    gap: 0.25rem !important;
+}
+
+.custom-accordion .p-accordion-header-link:hover {
+    background: #f9fafb !important;
+}
+
+.custom-accordion .p-accordion-header-link:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Header Content Layout */
+.accordion-header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 1rem;
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+}
+
+.accordion-header-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+.accordion-header-meta {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-tertiary-text);
+}
+
+.accordion-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.accordion-subtitle {
+    font-size: 12px;
+    color: #6b7280;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* Chevron Icon Customization */
+.custom-accordion .p-accordion-toggle-icon {
+    color: #6b7280 !important;
+    font-size: 1.25rem !important;
+    transition: transform 0.2s ease;
+    flex-shrink: 0 !important;
+    margin-left: auto !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Ensure icon container has proper spacing */
+.custom-accordion .p-accordion-header-link > span:last-child {
+    margin-left: 1rem !important;
+}
+
+/* Content Area */
+.custom-accordion .p-accordion-content {
+    background: #ffffff !important;
+    border: none !important;
+    padding: 0 40px !important;
+}
+
+.accordion-content {
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* Remove borders between items */
+.custom-accordion .p-accordion-tab {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Active/Expanded State */
+.custom-accordion .p-accordion-header-active .p-accordion-header-link {
+    background: #f9fafb !important;
+}
+
+/* First and Last Item Styling */
+.custom-accordion .p-accordion-tab:first-child .p-accordion-header-link {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.custom-accordion .p-accordion-tab:last-child .p-accordion-header-link {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.custom-accordion .p-accordion-tab:last-child .p-accordion-content {
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+/* When accordion has only one item */
+.custom-accordion .p-accordion-tab:only-child .p-accordion-header-link {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Disabled State */
+.custom-accordion .p-accordion-header-link.p-disabled {
+    opacity: 0.5;
+    cursor: not-allowed !important;
+}
+
+/* Add container styling */
+.custom-accordion .p-accordion {
+    overflow: hidden;
+    background: #ffffff;
+}
